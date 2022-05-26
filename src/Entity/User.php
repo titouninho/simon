@@ -39,15 +39,15 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(type: 'string', length: 255)]
     #[Groups(["customers_read" , "invoices_read","invoices_subresource","users_read"])]
-    #[assert\NotBlank(message:"Le prénom est obligatoire")]
     #[assert\Length(min:3, minMessage:"Le prénom doit faire entre 3 et 255 caractères", max:255, maxMessage:"Le prénom doit faire entre 3 et 255 caractères")]
+    #[assert\NotBlank(message:"Le prénom est obligatoire")]
 
     private $firstName;
 
     #[ORM\Column(type: 'string', length: 255)]
     #[Groups(["customers_read" => "invoices_read","invoices_subresource","users_read"])]
-    #[assert\NotBlank(message:"Le prénom est obligatoire")]
     #[assert\Length(min:3, minMessage:"Le nom doit faire entre 3 et 255 caractères", max:255, maxMessage:"Le nom doit faire entre 3 et 255 caractères")]
+    #[assert\NotBlank(message:"Le prénom est obligatoire")]
     private $lastName;
 
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Customer::class)]
