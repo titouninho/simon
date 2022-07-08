@@ -17,6 +17,7 @@ import AuthContext from "./js/contexts/AuthContext";
 import CustomerPage from "./js/pages/CustomerPage";
 import CustomersPage from "./js/pages/CustomersPage";
 import HomePage from "./js/pages/HomePage";
+import PricingPage from "./js/pages/PricingPage";
 import InvoicePage from "./js/pages/InvoicePage";
 import InvoicesPage from "./js/pages/InvoicesPage";
 import LoginPage from "./js/pages/LoginPage";
@@ -24,6 +25,8 @@ import RegisterPage from "./js/pages/RegisterPage";
 import authAPI from "./js/services/authAPI";
 // any CSS you import will output into a single css file (app.css in this case)
 import "./styles/app.css";
+import ErrorPage from "./js/pages/ErrorPage";
+import CalendlyPage from "./js/pages/CalendlyPage";
 
 authAPI.setup();
 
@@ -51,6 +54,9 @@ const App = () => {
             <PrivateRoute path="/invoices/:id" component={InvoicePage} />
             <PrivateRoute path="/customers" component={CustomersPage} />
             <PrivateRoute path="/invoices" component={InvoicesPage} />
+            <Route path="/pricing" component={PricingPage} />
+            <Route path="/404" component={ErrorPage} />
+            <Route path="/rendez-vous" component={CalendlyPage} />
             <Route path="/" component={HomePage} />
           </Switch>
         </main>

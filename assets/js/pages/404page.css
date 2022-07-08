@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'tommy';
+    src: url('./fonts/tommybold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .background-404-prise{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 18%;
+    z-index: 1;
+  }
+
+  .background-404-zoom{
+    position: absolute;
+    width: 50%;
+    left: 26.5%;
+    top: 30%;
+    z-index: 1;
+    Animation-name : width ;
+    Animation-delay : 2s;
+    Animation-duration : 3s;
+    Animation-iteration-count : 100000; 
+  }
+
+  @keyframes width {
+    0% {
+      width: 50%;
+    }
+    50% {
+      left: 27%;
+      width: 49%;
+      }
+  }
+
+  .title404{
+    position: absolute;
+    left: 45%;
+    top: 10%;
+  }
+
+  #button2{
+    position: absolute;
+    border-radius: 6px;
+    width: 9%;
+    height: 5%;
+    top: 85%;
+    left: 44%;
+    background: linear-gradient(to right, rgb(255, 230, 0), rgb(255, 161, 46));
+    border: none;
+    box-shadow: rgba(70, 74, 78, 0.2) 0px 8px 24px;
+    transition: transform .4s;
+    z-index: 2;
+  }
+
+  #button2:hover{
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
+    overflow: hidden;
+  }
+  
+  .desc404{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+  }

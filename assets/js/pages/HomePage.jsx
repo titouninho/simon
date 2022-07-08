@@ -1,24 +1,29 @@
 import React from 'react';
+import './homepage.css'
+import img1 from './images/illustration-tailor-home.png'; //with import
+import backgroundtailor from './images/backgroundtailor.png';
+import backgroundtailorlueur from './images/backgroundtailor-lueur.png';
 
 const HomePage = (props) => {
-    return ( <div className="list-group">
-    <a href="#" className="list-group-item list-group-item-action flex-column align-items-start active">
-      <div className="d-flex w-100 justify-content-between">
-        <h5 className="mb-1">Bonjour a toi</h5>
-        <small>Test</small>
-      </div>
-      <p className="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small>Donec id elit non mi porta.</small>
+    return ( 
+  <section>
+  <div className="tailorld">
+    <h1 class="titletailor">Tailor.</h1>
+    <p class="accrochetailor">L'Humain au centre des organisations.</p>
+    <blockquote class="desctailor">Tailor une solution SaaS entièrement personnalisable<br/> 
+    permets aux organisations d'accompagner<br/> 
+    leurs collaborateurs de leurs recrutements<br/> 
+    jusqu'à leur départ.</blockquote>
+    <img className="img1" src={img1} />
+    <a href="/#/register">
+    <button id="button1" to="/#/register" type="button" class="btn btn-warning">Lancez-vous !</button>
     </a>
-    <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-      <div className="d-flex w-100 justify-content-between">
-        <h5 className="mb-1">Bonsoir a toi</h5>
-        <small className="text-muted">Test</small>
-      </div>
-      <p className="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small className="text-muted">Donec id elit non mi porta.</small>
-    </a>
-  </div> );
+  </div> 
+  <div>
+  <img className="backgroundtailor" src={backgroundtailor} />
+  <img className="backgroundtailor-lueur" src={backgroundtailorlueur} />
+  </div>
+  </section>);
 }
  
 export default HomePage;

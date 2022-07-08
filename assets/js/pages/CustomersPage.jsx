@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import TableLoader from "../components/loaders/TableLoader";
 import Pagination from "../components/Pagination";
 import customersAPI from "../services/customersAPI";
 
@@ -7,6 +8,18 @@ const CustomersPage = (props) => {
   const [customers, setcustomers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(true);
+
+    //permet de récupérer les customers
+    const fetchCustomers = async () =>{
+      try {
+          const data = await CustomersAPI.findAll()
+          setcustomers(data);    
+          setLoading(false);
+       } catch(error) {
+        console.log(error.response)
+       }
+  }
 
   useEffect(() => {
     customersAPI
@@ -84,6 +97,7 @@ const CustomersPage = (props) => {
             <th></th>
           </tr>
         </thead>
+        {!loading && (
         <tbody>
           {paginatedCustomers.map((customer) => (
             <tr key={customer.id}>
@@ -110,8 +124,10 @@ const CustomersPage = (props) => {
               </td>
             </tr>
           ))}
-        </tbody>
+        </tbody> 
+        )}
       </table>
+      {loading && <TableLoader />}
 
       {itemsPerPage < filteredCustomers.length && (
         <Pagination

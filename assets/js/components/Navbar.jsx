@@ -3,6 +3,8 @@ import authAPI from '../services/authAPI';
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import AuthContext from '../contexts/AuthContext';
 import { toast } from 'react-toastify';
+import logotailor from './images/Logopascontour-noir.png'; //with import
+import './navbar.css'
 
 const Navbar = ({history}) => {
 
@@ -15,30 +17,36 @@ const Navbar = ({history}) => {
       history.push("/login");
     };
 
-    return ( <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    return ( <nav
+    class="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
-      <NavLink className="navbar-brand" to="/">
-        Facturya
-      </NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
   
       <div className="collapse navbar-collapse" id="navbarColor02">
         <ul className="navbar-nav me-auto">
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/customers">Clients</NavLink>
+          <li>
+          <NavLink className="navbar-brand" to="/">
+            <img className="logotailor" src={logotailor} />
+          </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/invoices">Factures</NavLink>
+            <NavLink className="nav-link" id="employe" to="/register">Employés</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" id="feedback" to="/register">FeedBack</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" id="edt" to="/register">EDT</NavLink>
           </li>
         </ul>
         <ul className="navbar-nav ml-auto">
           {!isAuthenticated &&( <><li className="nav-item"><NavLink to="/register" className="nav-link">Inscription</NavLink></li>
             <li className="nav-item">
-                <NavLink to="/login" className="btn btn-outline-success">Connexion</NavLink>
+                <NavLink to="/login" className="btn btn-dark">Connexion</NavLink>
             </li></>) || (<li className="nav-item">
-              <button onClick={handleLogout} className="btn btn-danger">
+              <button onClick={handleLogout} className="btn btn-outline-danger">
                 Déconnexion
               </button>
             </li> )}
