@@ -12,53 +12,213 @@
     font-style: normal;
   }
 
-  .illustration-contact{
-    width: 30%;
-    position: absolute;
-    top: 30%;
-    z-index: 2;
-    transition: transform .4s;
-  }
+  footer{
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+    z-index: 10;
+ }
 
-  .illustration-contact:hover{
-    -ms-transform: scale(1.03); /* IE 9 */
-    -webkit-transform: scale(1.03); /* Safari 3-8 */
-    transform: scale(1.03);
-    overflow: hidden;
+ @keyframes enter1{
+  0%{
+     opacity: 0%;
   }
+  40%{
+     opacity: 0%;
+  }
+  100%{
+     opacity: 100%;
+  }
+}
 
   .background-contact{
-    width: 41.9%;
+    width: 51%;
+    height: 101%;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: -1%;
+    left: -1%;
     z-index: 1;
   }
 
-  .background-contact-forme{
-    width: 35%;
+  .illustration-contact{
     position: absolute;
-    top: 25%;
-    left: 5%;
-    Animation-name : move-forme ;
-    Animation-delay : 2s;
-    Animation-duration : 6s;
-    Animation-iteration-count : 100000; 
-    z-index: -1;
+    width: 18%;
+    top: 30%;
+    left: 15%;
+    z-index: 3;
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
-  @keyframes move-forme {
-    0% {
-        top: 25%;
-        left: 5%;
+  .tete1{
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    z-index: 3;
+    width: 3%;
+    Animation-name : tete1, enter1 ;
+    Animation-delay : 0s, 0s;
+    Animation-duration : 20s, 2s;
+    Animation-iteration-count : 100000000, 1;
+  }
+
+  @keyframes tete1{
+    0%{
+      width: 3%;
     }
-    50% {
-        top: 25%;
-        left: 7%;
-      }
-    100% {
-      top: 25%;
-      left: 5%;
+    5%{
+      width: 3%;
+    }
+    15%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 34.8%;
+    }
+    25%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 34.8%;
+    }
+    40%{
+      width: 3%;
+    }
+    65%{
+      width: 3%;
+    }
+  }
+  
+  .tete2{
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    z-index: 3;
+    width: 3%;
+    Animation-name : tete2, enter1 ;
+    Animation-delay : 0s, 0s;
+    Animation-duration : 20s, 2s;
+    Animation-iteration-count : 100000000, 1;
+  }
+
+  @keyframes tete2{
+    0%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 44.8%;
+    }
+    10%{
+      width: 3%;
+      left: 17%;
+      top: 45%;
+    }
+    55%{
+      width: 3%;
+    }
+    70%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 44.8%;
+    }
+    100%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 44.8%;
+    }
+  }
+
+  .tete3{
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    z-index: 3;
+    width: 3%;
+    Animation-name : tete3, enter1 ;
+    Animation-delay : 0s, 0s;
+    Animation-duration : 20s, 2s;
+    Animation-iteration-count : 100000000, 1;
+  }
+
+  @keyframes tete3{
+    0%{
+      width: 3%;
+    }
+    30%{
+      width: 3%;
+    }
+    45%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 54.8%;
+    }
+    50%{
+      width: 3.5%;
+      left: 16.8%;
+      top: 54.8%;
+    }
+    55%{
+      width: 3%;
+    }
+    65%{
+      width: 3%;
+    }
+  }
+
+  .loupe{
+    position: absolute;
+    top: 41.5%;
+    left: 15.2%;
+    z-index: 3;
+    width: 11%;
+    Animation-name : loupe1, enter1;
+    Animation-delay : 0s, 0s;
+    Animation-duration : 20s, 2s;
+    Animation-iteration-count : 100000000, 1;
+  }
+
+  @keyframes loupe1{
+    0%{
+      top: 41.5%;
+      left: 15.2%;
+    }
+    15%{
+      top: 31.5%;
+    }
+    25%{
+      top: 31.5%;
+    }
+    40%{
+      top: 51.5%;
+    }
+    50%{
+      top: 51.5%;
+    }
+    65%{
+      top: 41.5%;
+    }
+  }
+
+  .planete-contact{
+    position: absolute;
+    width: 12%;
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+    Animation-name : planete1, enter1 ;
+    Animation-delay : 0s, 0s;
+    Animation-duration : 10s, 2s;
+    Animation-iteration-count : 100000000, 1;
+  }
+
+  @keyframes planete1{
+    0%{
+      width: 12%;
+      top: 20%;
+    }
+    50%{
+      width: 14%;
+      top: 18%;
     }
   }
 
@@ -66,15 +226,23 @@
     font-family: 'tommyregular';
     font-size: 26px;
     position: absolute;
-    top: 15%;
-    left: 55%;
+    top: 5%;
+    left: 65%;
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   form{
     font-family: 'tommyregular';
     position: absolute;
-    top: 20%;
-    left: 55%;
+    top: 10%;
+    left: 65%;
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
 label
@@ -91,8 +259,11 @@ input{
     border-left-style:none ;
     border-right-style:none ;
     border-top-style:none ;
+    border-radius: 6px;
+    height: 40px;
     border-color: #f6f6f6;
-    width: 530px;
+    background-color: #f6f6f6;
+    width: 330px;
     font-size: 14px;
     transition: transform .4s;
 }
@@ -104,6 +275,10 @@ input:focus {
     overflow: hidden;
     opacity: 90%;
 	outline:none;
+}
+
+::placeholder{
+padding: 5%;
 }
 
 select{
@@ -135,10 +310,11 @@ textarea{
     margin-top: 15px;
     border-width: 2px;
     border-color: #f6f6f6;
-    width: 500px;
+    background-color: #f6f6f6;
+    width: 330px;
     height: 100px;
     resize: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 14px;
     transition: transform .4s;
 }
@@ -157,10 +333,11 @@ textarea:focus {
 }
 
 #button-submit{
-    margin-top: 30px;
+    margin: 0px;
+    margin-top: 15px;
     width: 35%;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 6px;
     background: linear-gradient(to right, rgb(255, 230, 0), rgb(255, 161, 46));
     border: none;
     box-shadow: rgba(70, 74, 78, 0.2) 0px 8px 24px;

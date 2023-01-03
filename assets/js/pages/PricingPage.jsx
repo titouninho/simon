@@ -91,9 +91,6 @@ Adaptation du saas en fonction des besoins
     <img className="background-rocket-left" src={backgroundrocketleft} />
             <img className="planete-tailor-right" src={planetetailorright} />
             <img className="planete-tailor-left" src={planetetailorleft} />
-        <a href='/copyright'>
-            <h5 className='copyright-footer'>© 2022 Tailor</h5>
-        </a>
     </div>
   </section>
   </body>);

@@ -5,62 +5,109 @@
    font-style: normal;
  }
 
+ @font-face {
+   font-family: 'tommyregular';
+   src: url('./fonts/tommyregular.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+ }
  
+body{
+   overflow-x: hidden;
+}
+
+.back{
+   background-color: #ededed !important;
+}
+
+#navbar{
+   Animation-name : enter1 ;
+   Animation-delay : 0s;
+   Animation-duration : 2s;
+   Animation-iteration-count : 1;
+   z-index: 10;
+}
+
+footer{
+   Animation-name : enter1 ;
+   Animation-delay : 0s;
+   Animation-duration : 2s;
+   Animation-iteration-count : 1;
+   z-index: 10;
+}
+
+@keyframes enter1{
+   0%{
+      opacity: 0%;
+   }
+   40%{
+      opacity: 0%;
+   }
+   100%{
+      opacity: 100%;
+   }
+}
+
  .titletailor{
      color: #2a2f34;
      position: absolute;
-     left: 160px;
-     top: 235px;
+     left: 15%;
+     top: 25%;
      font-size: 50px;
      font-family: 'tommy';
+     z-index: 2;
+     Animation-name : enter1 ;
+     Animation-delay : 0s;
+     Animation-duration : 2s;
+     Animation-iteration-count : 1;
  }
 
  .accrochetailor{
-   color: #646667;
+   color: #414141;
    position: absolute;
-   left: 160px;
-   top: 300px;
-   font-family: 'tommy';
+   left: 15%;
+   top: 35%;
+   font-family: 'tommyregular';
    font-size: 24px;
+   z-index: 2;
+   Animation-name : enter1 ;
+   Animation-delay : 0s;
+   Animation-duration : 2s;
+   Animation-iteration-count : 1;
  }
 
  .desctailor{
-   color: #abb0b4;
+   color: #6d6d6d;
    position: absolute;
-   left: 160px;
-   top: 350px;
-   font-family: 'tommy';
-   font-size: 22px;
+   left: 15%;
+   top: 42%;
+   font-family: 'tommyregular';
+   font-size: 20px;
+   z-index: 2;
+   Animation-name : enter1 ;
+   Animation-delay : 0s;
+   Animation-duration : 2s;
+   Animation-iteration-count : 1;
  }
-
- .img1{
-    width: 30%;
-    position: absolute;
-    left: 68%;
-    top: 30%;
-    transition: transform .4s;
-    z-index: 3;
- }
-
- .img1:hover{
-    -ms-transform: scale(1.02); /* IE 9 */
-    -webkit-transform: scale(1.02); /* Safari 3-8 */
-    transform: scale(1.02);
-    overflow: hidden;
-    }
 
     #button1{
       position: absolute;
       border-radius: 6px;
       width: 9%;
       height: 5%;
-      top: 75%;
-      left: 10.5%;
-      background: linear-gradient(to right, rgb(255, 230, 0), rgb(255, 161, 46));
+      top: 63%;
+      left: 15%;
+      background-color: #2a2f34;
+      color: white;
       border: none;
       box-shadow: rgba(70, 74, 78, 0.2) 0px 8px 24px;
       transition: transform .4s;
       z-index: 2;
+      opacity: 98%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
     }
   
     #button1:hover{
@@ -68,38 +115,264 @@
       -webkit-transform: scale(1.03); /* Safari 3-8 */
       transform: scale(1.03);
       overflow: hidden;
+      opacity: 100%;
     }
 
-.backgroundtailor{
+.background-nuage{
    position: absolute;
-   width: 57.9%;
-   left: 42.1%;
+   width: 100.5%;
+   left: -0.42%;
    top: 0%;
    z-index: 1;
 }
 
-.backgroundtailor-lueur{
+.nuage{
    position: absolute;
-   width: 41.5%;
-   left: 58.4%;
-   top: 5%;
+   width: 100%;
+   left: 0%;
+   top: 65%;
    z-index: 1;
-   Animation-name : opacity1 ;
-   Animation-delay : 0s;
-   Animation-duration : 4s;
-   Animation-iteration-count : 100000; 
+   Animation-name : nuage1,enter1 ;
+   Animation-delay : 0s ,0s;
+   Animation-duration : 6s, 2s;
+   Animation-iteration-count : 100000, 1; 
 }
 
-@keyframes opacity1 {
+@keyframes nuage1 {
    0% {
-      opacity: 25%;
+      top: 65%;
+      left: 0%;
    }
    50% {
-     opacity: 100%;
+      top: 63%;
+      left: 0%;
      }
    100% {
-      opacity: 25%;
+      top: 65%;
+      left: 0%;
    }
  }
 
+ .etoile{
+   position: absolute;
+   top: -6%;
+   left: 0%;
+   z-index: 2;
+   Animation-name : etoile1 ;
+   Animation-delay : 0s;
+   Animation-duration : 10s;
+   Animation-iteration-count : 100000; 
+ }
 
+ .etoile2{
+   position: absolute;
+   top: -12%;
+   left: 0%;
+   z-index: 2;
+   Animation-name : etoile2 ;
+   Animation-delay : 0s;
+   Animation-duration : 12s;
+   Animation-iteration-count : 100000; 
+ }
+
+@keyframes etoile1 {
+   0% {
+      top: -6%;
+      left: 0%;
+   }
+   20%{
+      top: 100%;
+      left: 100%;
+   }
+   70%{
+      top: -6%;
+      left: 0%;
+      z-index: -5;
+   }
+}
+
+
+@keyframes etoile2 {
+   0% {
+      top: -12%;
+      left: 0%;
+   }
+   20%{
+      top: 80%;
+      left: 100%;
+   }
+   70%{
+      top: -12%;
+      left: 0%;
+      z-index: -5;
+   }
+}
+
+.illustration-home{
+   z-index: 1;
+   position: absolute;
+   width: 25%;
+   top: 30%;
+   left: 60%;
+   Animation-name : enter1 ;
+   Animation-delay : 0s;
+   Animation-duration : 2s;
+   Animation-iteration-count : 1;
+}
+
+.illustration-home-croquis{
+   z-index: 3;
+   position: absolute;
+   width: 5.9%;
+   top: 33.6%;
+   left: 66.5%;
+   Animation-name : croquis1, enter1 ;
+   Animation-delay : 0s, 0s;
+   Animation-duration : 3s, 2s;
+   Animation-iteration-count : 100000, 1; 
+}
+
+@keyframes croquis1{
+   0%{
+      width: 5.9%;
+   }
+   50%{
+      width: 6.1%;
+      top: 33.2%;
+   }
+}
+
+.powered{
+font-family: 'tommyregular';
+position: absolute;
+top: 173%;
+left: 43%;
+z-index: 10;
+font-size: 25px;
+Animation-name : enter1 ;
+Animation-delay : 0s;
+Animation-duration : 2s;
+Animation-iteration-count : 1;
+}
+
+.pelops{
+   width: 6%;
+   z-index: 3;
+   position: absolute;
+   top: 170%;
+   left: 54%;
+   transition: transform .4s;
+   Animation-name : enter1 ;
+   Animation-delay : 0s;
+   Animation-duration : 2s;
+   Animation-iteration-count : 1;
+}
+
+.pelops:hover{
+   -ms-transform: scale(1.03); /* IE 9 */
+   -webkit-transform: scale(1.03); /* Safari 3-8 */
+   transform: scale(1.03);
+}
+
+.pelops-div{
+   margin: 900px;
+}
+
+.constat{
+   position: absolute;
+   top: 125%;
+   left: 12%;
+   font-size: 20px;
+   font-family: 'tommyregular';
+}
+
+strong{
+   font-family: 'tommybold';
+}
+
+.constat-title{
+   position: absolute;
+   font-family: 'tommyregular';
+   top: 31%;
+   left: 7%;
+   padding: 40%;
+   font-size: 30px;
+   z-index: 1;
+}
+
+.illustration-constat{
+   position: absolute;
+   width: 30%;
+   top: 120%;
+   left: 60%;
+}
+
+.constat-graph{
+   position: absolute;
+   width: 3.4%;
+   top: 132%;
+   left: 73.3%;
+   Animation-name : constatgraph ;
+   Animation-delay : 0s;
+   Animation-duration : 6s;
+   Animation-iteration-count : 100000; 
+}
+
+@keyframes constatgraph{
+   0%{
+      width: 3.4%;
+   }
+   50%{
+      width: 3.8%;
+      left: 73.2%;
+      top: 131.9%;
+   }
+}
+
+.constat-ligne1{
+   position: absolute;
+   width: 5%;
+   top: 131.8%;
+   left: 78%;
+   transform: rotate(180deg);
+   Animation-name : constatligne1 ;
+   Animation-delay : 0s;
+   Animation-duration : 6s;
+   Animation-iteration-count : 100000; 
+}
+
+
+.constat-ligne2{
+   position: absolute;
+   width: 5%;
+   top: 136.8%;
+   left: 67%;
+   Animation-name : constatligne2 ;
+   Animation-delay : 0s;
+   Animation-duration : 6s;
+   Animation-iteration-count : 100000; 
+}
+
+@keyframes constatligne1{
+   0%{
+      left: 78%;
+   }
+   50%{
+      left: 77%;
+   }
+   100%{
+      left: 78%;
+   }
+}
+
+@keyframes constatligne2{
+   0%{
+      left: 67%;
+   }
+   50%{
+      left: 68%;
+   }
+   100%{
+      left: 67%;
+   }
+}

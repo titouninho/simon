@@ -1,8 +1,12 @@
 import React from 'react';
 import './calendlypage.css'
 import backgroundcontact from './images/background-contact.png';
-import backgroundcontactforme from './images/background-contact-forme.png';
-import illustrationcontact from './images/illustration-contact2.png';
+import illustrationcontact from './images/illustration-contact.png';
+import planete from './images/planete-tailor.png';
+import tete1 from './images/tete1.png';
+import tete2 from './images/tete2.png';
+import tete3 from './images/tete3.png';
+import loupe from './images/loupe-contact.png';
 
 const CalendlyPage = (props) => {
     return ( 
@@ -10,22 +14,24 @@ const CalendlyPage = (props) => {
     <div>
     <img className="illustration-contact" src={illustrationcontact} />
     <img className="background-contact" src={backgroundcontact} />
-    <img className="background-contact-forme" src={backgroundcontactforme} />
+    <img className="planete-contact" src={planete} />
+    <img className="tete1" src={tete1} />
+    <img className="tete2" src={tete2} />
+    <img className="tete3" src={tete3} />
+    <img className="loupe" src={loupe} />
     </div>
     <div className='title'>
         <h8 className="titre">Contacter nous</h8>
     </div>
   <div className="formulaire">
-        <form method='post' name='contact' data-netlify="true" onSubmit="submit">
+        <form method='post' name='contact'>
             <div>
-            <input type="hidden" name="form-name" value="contact" />
                 <label for="name">Nom</label> 
                 <input type="text" required id="name" name="name" placeholder="Votre nom" />
-                
             </div>
             <div>
                 <label for="surname">Prénom</label> 
-                <input type="text" required id="surname" name="surname" placeholder="Votre prénom"/>
+                <input type="text" required id="firstname" name="surname" placeholder="Votre prénom"/>
             </div>
             <div>
                 <label for="mail">E-mail&nbsp;</label>

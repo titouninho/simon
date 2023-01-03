@@ -1,3 +1,5 @@
+
+
 .logotailor{
     width: 2.2%;
     position: absolute;
@@ -42,4 +44,15 @@ li #edt{
 
 .ul{
     z-index: 10;
+}
+
+#connexion{
+    transition: transform .4s;
+}
+
+#connexion:hover{
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
+    overflow: hidden;
 }

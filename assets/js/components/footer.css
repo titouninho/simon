@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'tommy';
+    src: url('./fonts/tommybold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+ 
+  @font-face {
+    font-family: 'tommyregular';
+    src: url('./fonts/tommyregular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  } 
+
+footer{
+    font-family: 'tommyregular';
+    padding-left: 400px;
+    position: fixed !important;
+    bottom: 0% !important;
+    left: 27%;
+    z-index: 10;
+}
+
+.politique{
+    margin-right: 10%;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.politique:hover {opacity: 1}
+
+.copyright{
+    margin-right: 10%;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.copyright:hover {opacity: 1}
+
+.linkedin{
+    width: 15%;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.linkedin:hover {opacity: 0.7}
+
+.gmail{
+    width: 15%;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.gmail:hover {opacity: 0.7}
+
+.pelops-black{
+    width:  4%;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.pelops-black:hover {opacity: 0.7}

@@ -18,8 +18,8 @@ const Navbar = ({history}) => {
     };
 
     return ( <nav
-    class="navbar navbar-expand-lg navbar-light bg-light">
-    <div className="container-fluid">
+    class="navbar navbar-expand-lg navbar-light">
+    <div id='navbar' className="container-fluid">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -44,7 +44,7 @@ const Navbar = ({history}) => {
         <ul className="navbar-nav ml-auto">
           {!isAuthenticated &&( <><li className="nav-item"><NavLink to="/register" className="nav-link">Inscription</NavLink></li>
             <li className="nav-item">
-                <NavLink to="/login" className="btn btn-dark">Connexion</NavLink>
+                <NavLink to="/login" id="connexion" className="btn btn-dark">Connexion</NavLink>
             </li></>) || (<li className="nav-item">
               <button onClick={handleLogout} className="btn btn-outline-danger">
                 Déconnexion

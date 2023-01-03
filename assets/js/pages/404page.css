@@ -4,7 +4,31 @@
     font-weight: normal;
     font-style: normal;
   }
-  
+
+  .animation-error{
+    Animation-name : enter404 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+  }
+
+  footer{
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+    z-index: 10;
+ }
+
+  @keyframes enter404{
+    0%{
+       opacity: 0%;
+    }
+    100%{
+       opacity: 100%;
+    }
+ }
+
   .background-404-prise{
     position: absolute;
     width: 100%;
@@ -47,7 +71,7 @@
     width: 9%;
     height: 5%;
     top: 85%;
-    left: 44%;
+    left: 46%;
     background: linear-gradient(to right, rgb(255, 230, 0), rgb(255, 161, 46));
     border: none;
     box-shadow: rgba(70, 74, 78, 0.2) 0px 8px 24px;

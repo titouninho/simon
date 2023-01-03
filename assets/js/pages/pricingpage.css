@@ -12,6 +12,26 @@
     font-style: normal;
   }
 
+  @keyframes enterpricing{
+    0%{
+       opacity: 0%;
+    }
+    40%{
+       opacity: 0%;
+    }
+    100%{
+       opacity: 100%;
+    }
+ }
+
+ footer{
+  Animation-name : enter1 ;
+  Animation-delay : 0s;
+  Animation-duration : 2s;
+  Animation-iteration-count : 1;
+  z-index: 10;
+}
+
   .title-pricing{
     font-family: 'tommybold';
     position: absolute;
@@ -19,6 +39,10 @@
     top: 12%;
     left: 46%;
     z-index: 1;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .desc-pricing{
@@ -29,6 +53,10 @@
     left: 42%;
     text-align: center;
     z-index: 1;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .background-pricing{
@@ -53,6 +81,10 @@
     top: 30%;
     z-index: 1;
     transition: transform .4s;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .logo1-pricing:hover{
@@ -70,6 +102,10 @@
     top: 28%;
     z-index: 1;
     transition: transform .4s;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
 
@@ -87,6 +123,10 @@
     top: 39%;
     left: 32%;
     z-index: 1;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .stantard-prix{
@@ -96,6 +136,10 @@
     top: 43%;
     left: 32%;
     z-index: 1;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
 
@@ -107,6 +151,10 @@
     left: 37%;
     z-index: 1;
     opacity: 50%;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .stantard-desc{
@@ -117,6 +165,10 @@
     left: 25%;
     z-index: 1;
     opacity: 50%;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
 
@@ -127,6 +179,10 @@
     top: 39%;
     left: 65%;
     z-index: 1;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .pro-prix{
@@ -136,6 +192,10 @@
     top: 43%;
     left: 65%;
     z-index: 1;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .pro-desc{
@@ -146,6 +206,10 @@
     left: 59%;
     z-index: 1;
     opacity: 50%;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   #button3{
@@ -159,6 +223,10 @@
     box-shadow: rgba(176, 183, 191, 0.2) 0px 8px 24px;
     transition: transform .4s;
     z-index: 2;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   #button3:hover{
@@ -180,6 +248,10 @@
     box-shadow: rgba(70, 74, 78, 0.2) 0px 8px 24px;
     transition: transform .4s;
     z-index: 2;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   #button4:hover{
@@ -208,6 +280,10 @@
     left: 29.2%;
     z-index: 2;
     transition: .1s;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .offre-link:hover{
@@ -223,6 +299,10 @@
     left: 62.6%;
     z-index: 2;
     transition: .1s;
+    Animation-name : enterpricing ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
   }
 
   .offre-link2:hover{
@@ -265,15 +345,6 @@
   .logo-validate2{
     width: 8%;
   }
-  
-  .copyright-footer{
-    position: absolute;
-    font-family: 'tommy';
-    font-size: 14px;
-    top: 190%;
-    left: 44%;
-    padding: 35px;
-}
 
 @keyframes width2 {
     0% {
@@ -303,10 +374,10 @@
     top: 80%;
     left: 20%;
     transform: rotate(90deg);
-    Animation-name : width2 ;
-    Animation-delay : 2s;
-    Animation-duration : 3s;
-    Animation-iteration-count : 100000; 
+    Animation-name : width2, enterpricing;
+    Animation-delay : 2s, 0s;
+    Animation-duration : 3s, 2s;
+    Animation-iteration-count : 100000, 1; 
   }
 
   .rond-tailor2{
@@ -314,10 +385,10 @@
     width: 3%;
     top: 80%;
     left: 78%;
-    Animation-name : width3 ;
-    Animation-delay : 2s;
-    Animation-duration : 3s;
-    Animation-iteration-count : 100000; 
+    Animation-name : width3, enterpricing;
+    Animation-delay : 2s, 0s;
+    Animation-duration : 3s, 2s;
+    Animation-iteration-count : 100000, 1; 
   }
 
   .background-rocket-right{

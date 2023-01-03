@@ -27,6 +27,8 @@ import authAPI from "./js/services/authAPI";
 import "./styles/app.css";
 import ErrorPage from "./js/pages/ErrorPage";
 import CalendlyPage from "./js/pages/CalendlyPage";
+import Footer from "./js/components/Footer";
+import PelopsPage from "./js/pages/PelopsPage";
 
 authAPI.setup();
 
@@ -34,8 +36,9 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(
     authAPI.isAuthenticated()
   );
-
+  
   const NavbarWithRouter = withRouter(Navbar);
+  const FooterWithRouter = withRouter(Footer);
 
   return (
     <AuthContext.Provider
@@ -44,10 +47,12 @@ const App = () => {
         setIsAuthenticated,
       }}
     >
+
       <HashRouter>
         <NavbarWithRouter />
-        <main className="container pt-5">
+        <FooterWithRouter />
           <Switch>
+          <Route path="/pelops.io" component={PelopsPage} />
             <Route path="/login" component={LoginPage} />
             <Route path="/register" component={RegisterPage} />
             <PrivateRoute path="/customers/:id" component={CustomerPage} />
@@ -55,11 +60,10 @@ const App = () => {
             <PrivateRoute path="/customers" component={CustomersPage} />
             <PrivateRoute path="/invoices" component={InvoicesPage} />
             <Route path="/pricing" component={PricingPage} />
-            <Route path="/404" component={ErrorPage} />
+            <Route path="/home" component={HomePage} />
             <Route path="/rendez-vous" component={CalendlyPage} />
-            <Route path="/" component={HomePage} />
+            <Route path="/" component={ErrorPage} />
           </Switch>
-        </main>
       </HashRouter>
       <ToastContainer  position={toast.POSITION.BOTTOM_LEFT}/>
     </AuthContext.Provider>

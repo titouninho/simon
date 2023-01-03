@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'tommy';
+    src: url('./fonts/tommybold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+ 
+  @font-face {
+    font-family: 'tommyregular';
+    src: url('./fonts/tommyregular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @keyframes enter1{
+    0%{
+       opacity: 0%;
+    }
+    40%{
+       opacity: 0%;
+    }
+    100%{
+       opacity: 100%;
+    }
+
+}
+ 
+  .background-pelops{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+  }
+
+  .etoile3{
+    position: absolute;
+    top: -30%;
+    left: 0%;
+    z-index: 2;
+    Animation-name : etoile3 ;
+    Animation-delay : 0s;
+    Animation-duration : 10s;
+    Animation-iteration-count : 100000; 
+  }
+ 
+  .etoile4{
+    position: absolute;
+    top: -12%;
+    left: 0%;
+    z-index: 2;
+    Animation-name : etoile4 ;
+    Animation-delay : 0s;
+    Animation-duration : 12s;
+    Animation-iteration-count : 100000; 
+  }
+ 
+
+  @keyframes etoile3 {
+    0% {
+       top: -30%;
+       left: 0%;
+    }
+    20%{
+       top: 70%;
+       left: 100%;
+    }
+    70%{
+       top: -30%;
+       left: 0%;
+       z-index: -5;
+    }
+ }
+ 
+ 
+ @keyframes etoile4 {
+    1% {
+       top: -12%;
+       left: 0%;
+    }
+    20%{
+       top: 80%;
+       left: 100%;
+    }
+    70%{
+       top: -12%;
+       left: 0%;
+       z-index: -5;
+    }
+ }
+
+ .illustration-pelops{
+    position: absolute;
+    width: 0%;
+    top: 30%;
+    left: 75%;
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+ }
+
+ .titre-pelops{
+    font-family: 'tommyregular';
+    font-size: 42px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 3;
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+ }
+
+ .accroche-pelops{
+    font-family: 'tommyregular';
+    font-size: 24px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    opacity: 60%;
+    color: black;
+    z-index: 3;
+    Animation-name : enter-opacity-accroche ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+ }
+
+ @keyframes enter-opacity-accroche{
+    0%{
+       opacity: 0%;
+    }
+    40%{
+       opacity: 0%;
+    }
+    100%{
+       opacity: 60%;
+    }
+   }
+
+ .desc-pelops{
+    font-family: 'tommyregular';
+    font-size: 16px;
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    opacity: 40%;
+    color: black;
+    z-index: 3;
+    Animation-name : enter-opacity-desc ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+ }
+
+ @keyframes enter-opacity-desc{
+    0%{
+       opacity: 0%;
+    }
+    40%{
+       opacity: 0%;
+    }
+    100%{
+       opacity: 40%;
+    }
+   }
+
+ .pelops-icon{
+    z-index: 3;
+    position: absolute;
+    width: 11.5%;
+    top: 25%;
+    left: 70%;
+    Animation-name : pelops-icon , enter1;
+    Animation-delay : 0s, 0s;
+    Animation-duration : 6s, 2s;
+    Animation-iteration-count : 100000, 1; 
+ }
+
+ @keyframes pelops-icon{
+    0%{
+        width: 11.5%;
+    }
+    50%{
+        width: 12%;
+        left: 69.7%;
+    }
+ }
+
+ .pelops-titre-propositions{
+    position: absolute;
+    top: 80%;
+    left: 41%;
+    font-family: tommyregular;
+    font-size: 25px;
+    opacity: 80%;
+    Animation-name : enter-opacity-propositions ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+ }
+ 
+ @keyframes enter-opacity-propositions{
+    0%{
+       opacity: 0%;
+    }
+    40%{
+       opacity: 0%;
+    }
+    100%{
+       opacity: 80%;
+    }
+   }
+
+   .logo-tailor-pelops{
+    width: 3%;
+    position: absolute;
+    top: 87%;
+    left: 44%;
+    Animation-name : enter1 ;
+    Animation-delay : 0s;
+    Animation-duration : 2s;
+    Animation-iteration-count : 1;
+    transition: transform .4s;
+   }
+
+   .logo-tailor-pelops:hover{
+      -ms-transform: scale(1.03); /* IE 9 */
+      -webkit-transform: scale(1.03); /* Safari 3-8 */
+      transform: scale(1.03);
+   }
+
+   .edarwin-logo{
+      width: 3.3%;
+      position: absolute;
+      top: 87%;
+      left: 53%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+      transition: transform .4s;
+     }
+
+     .edarwin-logo:hover{
+      -ms-transform: scale(1.03); /* IE 9 */
+      -webkit-transform: scale(1.03); /* Safari 3-8 */
+      transform: scale(1.03);
+   }
+
+   .equipe-title{
+      font-family: 'tommyregular';
+      font-size: 30px;
+      position: absolute;
+      top: 120%;
+      left: 44.2%;
+      opacity: 80%;
+      Animation-name : enter-opacity-propositions ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .maxime-photo{
+      width: 15%;
+      position: absolute;
+      top: 135%;
+      left: 30%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+      transition: transform .4s;
+     }
+
+     .maxime-photo:hover{
+      -ms-transform: scale(1.03); /* IE 9 */
+      -webkit-transform: scale(1.03); /* Safari 3-8 */
+      transform: scale(1.03);
+   }
+
+   .nahim-photo{
+      width: 15%;
+      position: absolute;
+      top: 135%;
+      left: 55%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+      transition: transform .4s;
+     }
+
+     .nahim-photo:hover{
+      -ms-transform: scale(1.03); /* IE 9 */
+      -webkit-transform: scale(1.03); /* Safari 3-8 */
+      transform: scale(1.03);
+   }
+
+   .bordure-equipe{
+      position: absolute;
+      width: 12.3%;
+      top: 136%;
+      left: 33.7%;
+      z-index: -1;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .bordure-equipe2{
+      position: absolute;
+      width: 12.3%;
+      top: 136%;
+      left: 58.7%;
+      z-index: -1;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .titre-maxime{
+      font-family: 'tommybold';
+      position: absolute;
+      top: 165%;
+      left: 36%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .titre-nahim{
+      font-family: 'tommybold';
+      position: absolute;
+      top: 165%;
+      left: 59%;
+      text-align: center;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .grade-maxime{
+      font-family: 'tommyregular';
+      position: absolute;
+      top: 172%;
+      left: 36.8%;
+      text-align: center;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .grade-nahim{
+      font-family: 'tommyregular';
+      position: absolute;
+      top: 172%;
+      left: 61.8%;
+      text-align: center;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .contact-pelops{
+      position: absolute;
+      top: 190%;
+      left: 60%;
+   }
+   
+   .info-title{
+      font-family: 'tommyregular';
+      position: absolute;
+      top: 180%;
+      left: 45%;
+      font-size: 30px;
+      opacity: 80%;
+      Animation-name : enter-opacity-propositions ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   #button-submit-pelops{
+      margin: 0px;
+      margin-top: 15px;
+      width: 35%;
+      height: 40px;
+      border-radius: 6px;
+      background: linear-gradient(to right, rgb(81, 186, 239), rgb(46, 95, 255));
+      border: none;
+      box-shadow: rgba(70, 74, 78, 0.2) 0px 8px 24px;
+      transition: transform .4s;
+    }
+  
+    #button-submit-pelops:hover{
+      -ms-transform: scale(1.03); /* IE 9 */
+      -webkit-transform: scale(1.03); /* Safari 3-8 */
+      transform: scale(1.03);
+      overflow: hidden;
+    }
+
+    .pelops-map{
+      width: 30%;
+      position: absolute;
+      top: 195%;
+      left: 18%;
+      transition: transform .4s;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+    }
+
+    .pelops-map:hover{
+      -ms-transform: scale(1.015); /* IE 9 */
+      -webkit-transform: scale(1.015); /* Safari 3-8 */
+      transform: scale(1.015);
+   }
+
+   .adresse-pelops{
+      font-family: 'tommyregular';
+      position: absolute;
+      top: 240%;
+      left: 18%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   b{
+      font-family: 'tommybold';
+   }
+
+   .tel-pelops{
+      font-family: 'tommyregular';
+      position: absolute;
+      top: 245%;
+      left: 18%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .mail-pelops{
+      font-family: 'tommyregular';
+      position: absolute;
+      top: 250%;
+      left: 18%;
+      Animation-name : enter1 ;
+      Animation-delay : 0s;
+      Animation-duration : 2s;
+      Animation-iteration-count : 1;
+   }
+
+   .title-footer-white{
+      position: absolute;
+      top: 270%;
+      color: white;
+   }

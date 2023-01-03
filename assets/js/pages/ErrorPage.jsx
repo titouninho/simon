@@ -7,7 +7,7 @@ import backgrounderrorzoom from './images/background-404-zoom.png';
 const ErrorPage = (props) => {
     return ( 
   <body>
-  <section>
+  <section className='animation-error'>
     <div className="tailor404">
     <h1 className='title404'>Oops </h1>
     <p className='desc404'>Nous ne trouvons pas votre page</p>
