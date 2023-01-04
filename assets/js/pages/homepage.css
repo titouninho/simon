@@ -13,7 +13,8 @@
  }
  
 body{
-   overflow-x: hidden;
+   width:100%;
+   overflow-x:hidden;
 }
 
 .back{
@@ -27,6 +28,7 @@ body{
    Animation-iteration-count : 1;
    z-index: 10;
 }
+
 
 footer{
    Animation-name : enter1 ;
@@ -376,3 +378,4 @@ strong{
       left: 67%;
    }
 }
+

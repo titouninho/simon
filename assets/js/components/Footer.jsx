@@ -2,11 +2,12 @@ import React, {useContext} from 'react';
 import gmail from "./images/gmail.png";
 import linkedin from "./images/linkedin.png";
 import pelopsblack from "./images/pelops-black&white.png";
-import './footer.css'
+import './footer.css';
+import './responsive-footer.css';
 
 const Footer = ({history}) => {
     return ( <footer class="navbar navbar-expand-lg navbar-light">
-      <div>
+      <div class="footer">
         <ul class="navbar-nav me-auto">
           <li className='politique'>
             <a class="nav-link active" href="#/politicy">politicy

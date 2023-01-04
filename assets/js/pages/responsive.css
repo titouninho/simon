@@ -1,0 +1,46 @@
+@media screen and (max-width: 767px){
+    html,body{
+        width:100%;
+        overflow-x:hidden;
+     }
+    .etoile{
+        display: none;
+      }
+     
+      .etoile2{
+        display: none;
+      }
+      .background-nuage{
+        position: absolute;
+        width: 100.5%;
+        left: -0.42%;
+        top: 0%;
+        z-index: 1;
+     }
+     .nuage{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 1;
+        Animation-name : nuage2,enter1 ;
+        Animation-delay : 0s ,0s;
+        Animation-duration : 6s, 2s;
+        Animation-iteration-count : 100000, 1; 
+     }
+}
+
+@keyframes nuage2 {
+    0% {
+       top: 18%;
+       left: 0%;
+    }
+    50% {
+       top: 16%;
+       left: 0%;
+      }
+    100% {
+       top: 18%;
+       left: 0%;
+    }
+  }

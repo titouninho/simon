@@ -1,5 +1,6 @@
 import React from 'react';
-import './homepage.css'
+import './homepage.css';
+import './responsive.css';
 import backgroundnuage from './images/background-home.png';
 import nuage from './images/nuage-tailor.png';
 import etoile from './images/etoile-tailor.png';
